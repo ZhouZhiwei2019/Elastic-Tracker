@@ -3,7 +3,7 @@
     "/home/ji/ros_ws/tracking_car/devel/lib/python3/dist-packages",
     "/opt/ros/noetic/lib/python3/dist-packages"
   ],
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 0}",
   "files.associations": {
     "deque": "cpp",
