@@ -1,7 +1,8 @@
 #include <bar/hello.h>
 #include <baz/world.h>
 
-int main(void) {
+int main(void)
+{
     hello();
     world();
 

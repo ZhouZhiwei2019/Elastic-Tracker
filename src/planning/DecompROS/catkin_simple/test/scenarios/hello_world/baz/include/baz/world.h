@@ -2,11 +2,13 @@
 
 #include <boost/thread.hpp>
 
-void print_world() {
+void print_world()
+{
     std::cout << "world!" << std::endl;
 }
 
-void world() {
+void world()
+{
     boost::thread t(print_world);
     t.join();
 }
