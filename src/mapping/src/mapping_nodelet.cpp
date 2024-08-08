@@ -87,7 +87,7 @@ private:
         // t1 = ros::Time::now();
         Eigen::Vector3d       body_p(odom_msg->pose.pose.position.x, odom_msg->pose.pose.position.y, odom_msg->pose.pose.position.z);
         Eigen::Quaterniond    body_q(odom_msg->pose.pose.orientation.w, odom_msg->pose.pose.orientation.x, odom_msg->pose.pose.orientation.y,
-                                     odom_msg->pose.pose.orientation.z);
+                                  odom_msg->pose.pose.orientation.z);
         Eigen::Vector3d       cam_p     = body_q.toRotationMatrix() * cam2body_p_ + body_p;
         Eigen::Quaterniond    cam_q     = body_q * Eigen::Quaterniond(cam2body_R_);
         cv_bridge::CvImagePtr depth_ptr = cv_bridge::toCvCopy(depth_msg);

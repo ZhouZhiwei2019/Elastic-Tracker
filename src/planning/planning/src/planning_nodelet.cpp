@@ -188,9 +188,9 @@ private:
         replanStateMsg_.target = target_msg_;
         target_lock_.clear();
         Eigen::Vector3d    target_p(replanStateMsg_.target.pose.pose.position.x, replanStateMsg_.target.pose.pose.position.y,
-                                    replanStateMsg_.target.pose.pose.position.z);
+                                 replanStateMsg_.target.pose.pose.position.z);
         Eigen::Vector3d    target_v(replanStateMsg_.target.twist.twist.linear.x, replanStateMsg_.target.twist.twist.linear.y,
-                                    replanStateMsg_.target.twist.twist.linear.z);
+                                 replanStateMsg_.target.twist.twist.linear.z);
         Eigen::Quaterniond target_q;
         target_q.w() = replanStateMsg_.target.pose.pose.orientation.w;
         target_q.x() = replanStateMsg_.target.pose.pose.orientation.x;
